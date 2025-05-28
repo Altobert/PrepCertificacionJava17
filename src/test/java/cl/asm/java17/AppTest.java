@@ -19,4 +19,13 @@ public class AppTest {
         testInstance.main(saludos);        
         assertTrue(true);
     }
+
+    @Test
+    public void testClassAnimal(){
+        java.util.logging.Logger log = java.util.logging.Logger.getLogger(App.class.getName());        
+        Animal animal = new Animal();
+        animal.setName("Gato");
+        log.info("el nombre del animal es: "+animal.getName());
+    }
+
 }
