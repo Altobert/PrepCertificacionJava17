@@ -28,4 +28,14 @@ public class AppTest {
         log.info("el nombre del animal es: "+animal.getName());
     }
 
+    @Test
+    public void testClassZoo(){
+        java.util.logging.Logger log = java.util.logging.Logger.getLogger(App.class.getName());
+        log.info("Inicio Test de la clase Zoo.");
+        Zoo zoo = new Zoo();
+        String [] args = new String[] {"Elefante", "León"};
+        zoo.main(args);
+        log.info("Test de la clase Zoo completado.");
+    }
+
 }
